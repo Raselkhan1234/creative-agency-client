@@ -1,0 +1,22 @@
+.login-chart {
+  display: block;
+  margin: auto;
+  width: 510px;
+  height: 357px;
+  border: 1px solid #ababab;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.login-btn {
+  display: block;
+  margin: auto;
+  width: 410px;
+  height: 41px;
+  background: #ffffff;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  border-radius: 57px;
+}
+.login-p {
+  margin-left: 106px;
+}

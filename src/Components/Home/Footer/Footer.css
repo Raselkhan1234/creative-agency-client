@@ -1,0 +1,22 @@
+.container-footer {
+  padding: 0px 128px;
+}
+.container-footer-p {
+  font-size: 13px;
+  font-weight: 300;
+}
+.btn-footer {
+  width: 100px;
+  height: 40px;
+  margin-left: 0px;
+  background-color: #181a37;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.footer-small {
+  display: block;
+  text-align: center;
+  margin-top: 115px;
+  font-weight: 300;
+}

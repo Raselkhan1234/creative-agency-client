@@ -1,0 +1,34 @@
+.service-container {
+  padding: 20px 0;
+}
+.card {
+  width: 331px;
+  height: 275px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+}
+.card:hover {
+  box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  text-align: center;
+}
+.card-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.row {
+  margin-right: 0;
+}

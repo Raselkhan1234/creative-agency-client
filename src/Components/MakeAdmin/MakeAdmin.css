@@ -1,0 +1,27 @@
+#make-price {
+  width: 410px;
+  height: 35px;
+  border: none;
+  background-color: #fff;
+  padding-left: 15px;
+  color: gray;
+  border: 1px solid lightgray;
+}
+#make-price:focus {
+  outline: none;
+}
+.add-btn {
+  padding: 5px 31px;
+  display: block;
+  background-color: #009444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 22px;
+}
+.add-btn:focus {
+  outline: none;
+}
+.add-btn:hover {
+  background-color: green;
+}

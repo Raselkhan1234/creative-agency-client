@@ -1,0 +1,17 @@
+.background-image {
+  height: 400px;
+}
+.background-h1 {
+  font-size: 50px;
+}
+.background-btn {
+  width: 100px;
+  height: 40px;
+  background-color: #181a37;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.background-btn:hover {
+  background-color: #26a59d;
+}

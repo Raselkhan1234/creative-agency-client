@@ -1,0 +1,55 @@
+#file-price {
+  width: 350px;
+  height: 45px;
+  border: none;
+  background-color: #fff;
+  padding-left: 15px;
+  color: gray;
+  border: 1px solid lightgray;
+}
+#file-price:focus {
+  outline: none;
+}
+p {
+  margin: 0;
+  font-weight: 500;
+}
+#file-details {
+  resize: none;
+  min-height: 90px !important;
+  width: 350px;
+  border: 1px solid lightgray;
+}
+#file-details:focus {
+  outline: none;
+}
+#file-label {
+  display: inline-block;
+  width: 231px;
+  height: 45px;
+  border: 1px solid #009444;
+  text-align: center;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #deffed;
+  color: #009444;
+  padding-top: 8px;
+  cursor: pointer;
+  margin: 0;
+}
+.file-btn {
+  padding: 5px 31px;
+  display: block;
+  background-color: #009444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 15px;
+}
+.file-btn:focus {
+  outline: none;
+}
+.file-btn:hover {
+  background-color: green;
+}

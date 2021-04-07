@@ -1,0 +1,32 @@
+.cardList-part {
+  width: 360px;
+  height: 235px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 15px 23px;
+  margin: 0 69px 30px 0;
+}
+.cardList-part:hover {
+  box-shadow: 1px 1px 10px 2px gray;
+}
+.cardList-img {
+  height: 75px;
+  width: 70px;
+  display: inline-block;
+  margin-right: auto;
+}
+.cardList-btn {
+  width: 108px;
+  height: 35px;
+  background: #ffe3e3;
+  border: none;
+  border-radius: 5px;
+  color: red;
+}
+.cardList-btn:hover {
+  background-color: #f67070;
+  color: #ffe3e3;
+}
+.cardList-btn:focus {
+  outline: none;
+}
