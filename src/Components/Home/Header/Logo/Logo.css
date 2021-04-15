@@ -1,0 +1,40 @@
+.col-xl-2{
+    display:block;
+    margin:auto;
+}
+.logo-image{
+    height: 95px;
+    padding: 30px 99px;
+
+}
+@media(max-width:1200px){
+    .logo-image{
+
+
+    }
+
+}
+@media(max-width:992px){
+    .logo-image{
+        height: 65px;
+        padding: 17px;
+
+    }
+
+}
+@media(max-width:768px){
+    .logo-image{
+
+    }
+
+}
+@media(max-width:576px){
+    .logo-image{
+        height: 72px;
+        display: block;
+        margin: auto;
+
+    }
+
+}
+

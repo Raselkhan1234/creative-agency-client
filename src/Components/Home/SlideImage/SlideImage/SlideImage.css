@@ -24,3 +24,31 @@
 
   background:rgb(221, 153, 6);
 }
+.image-carouselImage{
+  height:250px;
+  width:320px;
+}
+.slideImage-h4{
+  padding: 20px; 
+  margin: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+@media(max-width:1200px){
+  .image-carouselImage{
+    width:265px;
+  }
+
+}
+@media(max-width:992px){
+  .swiper-slide{
+    width: 323.667px !important;
+  }
+}
+@media(max-width:576px){
+  .slideImage-h4{
+    padding: 10px;
+    margin: 40px;
+  }
+}

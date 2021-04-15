@@ -28,7 +28,55 @@
   line-height: 28px;
   text-align: center;
 }
+.image-card{
+  width:65px;
+  height:65px;
+  margin:auto;
+}
 
 .row {
   margin-right: 0;
+}
+@media(max-width:1200px){
+  .card{
+    width: 295px;
+    height: 265px;
+  }
+  .card-title{
+    font-size: 17px;
+
+  }
+  .card-text{
+    font-size: 13px;
+
+  }
+  .image-card{
+    width:60px;
+    height:60px;
+  }
+
+}
+@media(max-width:992px){
+  .col-md-5{
+    display:block;
+    margin:auto;
+  }
+  .card{
+    width: 280px;
+    height: 255px;
+    
+  }
+  .card-title{
+    font-size: 17px;
+
+  }
+  .card-text{
+    font-size: 13px;
+
+  }
+  .image-card{
+    width:60px;
+    height:60px;
+  }
+
 }

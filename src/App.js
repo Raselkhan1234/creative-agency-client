@@ -22,6 +22,9 @@ function App() {
     email:"",
 })
 
+
+
+
   return (
     <UserContext.Provider value={[loggedIn,setLoggedIn]}>
       <Router>

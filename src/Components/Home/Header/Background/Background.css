@@ -1,12 +1,22 @@
+.background-section {
+  padding: 50px 0;
+}
 .background-image {
-  height: 400px;
+  height: 370px;
+  padding-bottom: 20px;
+  padding-left: 50px;
 }
 .background-h1 {
   font-size: 50px;
+  padding-top: 30px;
+  margin: 0;
+}
+.background-p {
+  padding: 8px 0;
 }
 .background-btn {
-  width: 100px;
-  height: 40px;
+  width: 125px;
+  height: 50px;
   background-color: #181a37;
   color: #fff;
   border: none;
@@ -14,4 +24,86 @@
 }
 .background-btn:hover {
   background-color: #26a59d;
+}
+
+@media (max-width: 1200px) {
+  .background-image {
+    height: 330px;
+    padding-left: 30px;
+  }
+  .background-h1 {
+    font-size: 45px;
+    padding-top: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .background-image {
+    height: 310px;
+    padding-left: 45px;
+  }
+  .background-h1 {
+    font-size: 27px;
+    padding-top: 30px;
+  }
+  .background-btn {
+    width: 85px;
+    height: 40px;
+  }
+  .background-p {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .background-section {
+    padding-top: 0;
+  }
+  .background-image {
+    height: 295px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .background-h1 {
+    font-size: 43px;
+    padding-top: 30px;
+    text-align:center;
+  }
+  .background-p {
+    padding: 10px 0;
+    font-size: 14px;
+    text-align:center;
+  }
+  .background-btn {
+    width: 125px;
+    height: 50px;
+    display:block;
+    margin:auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-image {
+    height: 270px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .background-h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .background-p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .background-btn {
+    text-align: center;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+  }
 }

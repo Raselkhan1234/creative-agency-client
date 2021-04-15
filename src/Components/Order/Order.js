@@ -10,9 +10,9 @@ import SideBar from "../SideBar/SideBar";
 const Order = () => {
   const [loggedIn, setLoggedIn] = useContext(UserContext);
   let { header } = useParams();
-
   let history = useHistory();
   const { register, handleSubmit, errors } = useForm();
+
   const onSubmit = (data) => {
     const formData = new FormData();
     formData.append("file", data.file[0]);
@@ -84,7 +84,7 @@ const Order = () => {
               className="order-input"
               type="text"
               ref={register({ required: true })}
-              defaultValue={header}
+              defaultValue={header === ":header" ? "Graphic design" : header}
             />
             {errors.design && (
               <span className="error">This field is required</span>

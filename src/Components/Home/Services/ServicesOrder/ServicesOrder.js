@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./ServicesOrder.css";
 
 const ServicesOrder = ({ cu }) => {
   const header = cu.title;
+  console.log(header);
   return (
     <div
-      class="col-md-4 d-flex justify-content-center"
+      class="col-lg-4 col-md-5 d-flex justify-content-center"
       style={{ padding: "0" }}
     >
       <Link
@@ -14,6 +16,7 @@ const ServicesOrder = ({ cu }) => {
       >
         <div class="card">
           <img
+          className="image-card"
             style={{ width: "65px", height: "65px", margin: "auto" }}
             src={`data:image/png;base64,${cu.image.img}`}
             alt=""

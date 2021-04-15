@@ -26,7 +26,7 @@ const Client = () => {
       </h4>
       <div class="row" style={{ padding: "100px" }}>
         {clientReview.map((cl) => (
-          <div class="col-md-4" key={cl._id}>
+          <div class="col-lg-4 col-md-5" key={cl._id}>
             <div className="container">
               <div class="d-flex ">
                 <div>

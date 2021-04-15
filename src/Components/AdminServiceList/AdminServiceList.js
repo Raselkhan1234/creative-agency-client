@@ -46,6 +46,14 @@ import SideBar from "../SideBar/SideBar";
 const AdminServiceList = () => {
   const [loggedIn, setLoggedIn] = useContext(UserContext);
   const [allInformation, setAllInformation] = useState([]);
+
+  const state=[
+              {id:1,value:"Pending"},
+              {id:2,value:"Done"},
+              {id:3,value:"On going"}
+           ];
+  
+
   useEffect(() => {
     fetch("http://localhost:5000/allInformation?email=" + loggedIn.email, {
       method: "GET",
@@ -57,7 +65,6 @@ const AdminServiceList = () => {
       .then((res) => res.json())
       .then((success) => {
         setAllInformation(success);
-        console.log(success);
       });
   }, []);
   return (
@@ -113,22 +120,11 @@ const AdminServiceList = () => {
                   <td>{list.design}</td>
                   <td id="details">{list.details}</td>
                   <td>
-                    <div>
-                      <select
-                        name="selected"
-                        style={{ border: "none", paddingLeft: "45px" }}
-                      >
-                        <option value="pending" style={{ color: "red" }}>
-                          pending
-                        </option>
-                        <option value="Done" style={{ color: "lightgreen" }}>
-                          Done
-                        </option>
-                        <option value="On going" style={{ color: "yellow" }}>
-                          On going
-                        </option>
-                      </select>
-                    </div>
+                    <select>
+                      {state.map((st) => (
+                        <option key={st.id} value={st.value}>{st.value}</option>
+                      ))}
+                    </select>
                   </td>
                 </tr>
               ))}

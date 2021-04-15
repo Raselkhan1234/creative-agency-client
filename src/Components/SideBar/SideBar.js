@@ -59,7 +59,7 @@ const SideBar = () => {
       ) : (
         <div>
           <div className="side-bar">
-            <Link to="/order">
+            <Link to="/order/:header">
               <FontAwesomeIcon
                 style={{ marginRight: "10px" }}
                 icon={faShoppingCart}

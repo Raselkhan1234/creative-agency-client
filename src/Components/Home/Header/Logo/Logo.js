@@ -1,4 +1,5 @@
 import React from "react";
+import "./Logo.css";
 
 const photo = [
   {
@@ -25,13 +26,15 @@ const Logo = () => {
   return (
     <div
       class="container-fluid d-flex justify-content-center align-items-center "
-      style={{ height: "200px" }}
+      style={{ height: "200px",paddingTop:"15px" }}
     >
+      <div class="row">
       {photo.map((ph) => (
-        <div class="col-md-2" key={ph.id}>
-          <img style={{ height: "35px" }} src={ph.logo} alt="" />
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6" key={ph.id}>
+          <img  className="logo-image" src={ph.logo} alt="" />
         </div>
       ))}
+      </div>
     </div>
   );
 };

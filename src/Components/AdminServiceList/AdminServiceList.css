@@ -32,3 +32,14 @@ td {
   color: #686868;
   font-weight: 400;
 }
+select{
+  border:none;
+  outline:none;
+}
+
+option{
+  border:none;
+}
+
+
+

@@ -14,7 +14,8 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 
 import "./SlideImage.css";
-import { Carousel } from "bootstrap";
+import CarouselImage from "../CarouselImage/CarouselImage";
+
 
 SwiperCore.use([Navigation, Pagination, Autoplay, Scrollbar, A11y]);
 
@@ -41,7 +42,7 @@ const SlideImage = () => {
     >
       <h4
         class="d-flex justify-content-center "
-        style={{ padding: "20px", margin: "50px", color: "#fff" }}
+        className="slideImage-h4"
       >
         Here are some of
         <span style={{ color: "#7AB259", marginLeft: "5px" }}> our works</span>
@@ -57,7 +58,7 @@ const SlideImage = () => {
         >
           {carouselImage.map((Im) => (
             <SwiperSlide>
-              <Carousel Im={Im} key={Im.id}></Carousel>
+              <CarouselImage Im={Im} key={Im.id}></CarouselImage>
             </SwiperSlide>
           ))}
         </Swiper>

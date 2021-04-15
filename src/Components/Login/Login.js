@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebaseConfig";
@@ -10,6 +10,15 @@ import { useHistory, useLocation } from "react-router";
 
 const Login = () => {
   const [loggedIn, setLoggedIn] = useContext(UserContext);
+  const [isAdmin, setIsAdmin] = useState(false);
+ 
+
+   
+ 
+ console.log(loggedIn);
+  
+
+
 
   if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
@@ -17,8 +26,9 @@ const Login = () => {
 
   let history = useHistory();
   let location = useLocation();
+  let {from}= location.state || { from: { pathname: "/order/:header" } };
 
-  let { from } = location.state || { from: { pathname: "/order/:header" } };
+
 
   const handleGoogleSignIn = () => {
     const googleProvider = new firebase.auth.GoogleAuthProvider();
@@ -27,9 +37,32 @@ const Login = () => {
       .signInWithPopup(googleProvider)
       .then((result) => {
         const info = result.user;
+        console.log(info);
         setLoggedIn(info);
         storeAuthToken();
-        history.replace(from);
+        fetch("http://localhost:5000/isAdmin", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: info.email }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            setIsAdmin(data);
+            if(data){
+              history.replace("/admin/service")
+            }
+            else{
+              history.replace(from);
+            }
+          });
+        
+        
+      
+        // history.replace(from);
+       
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -74,7 +107,7 @@ const Login = () => {
         </div>
 
         <p className="login-p">
-          Don’t have an account? <a href="#">Create an account</a>
+          Don’t have an account? <a href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fwww.google.com%2F&hl=en&dsh=S-1089649010%3A1618357154779087&gmb=exp&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp">Create an account</a>
         </p>
       </div>
     </section>
