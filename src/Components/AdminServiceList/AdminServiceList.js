@@ -55,7 +55,7 @@ const AdminServiceList = () => {
   
 
   useEffect(() => {
-    fetch("http://localhost:5000/allInformation?email=" + loggedIn.email, {
+    fetch("https://arcane-temple-39788.herokuapp.com/allInformation?email=" + loggedIn.email, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

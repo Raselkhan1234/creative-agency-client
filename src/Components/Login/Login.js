@@ -40,7 +40,7 @@ const Login = () => {
         console.log(info);
         setLoggedIn(info);
         storeAuthToken();
-        fetch("http://localhost:5000/isAdmin", {
+        fetch("https://arcane-temple-39788.herokuapp.com/isAdmin", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

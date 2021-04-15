@@ -8,7 +8,7 @@ const MakeAdmin = () => {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
     const userEmail = data.email;
-    fetch("http://localhost:5000/addAdmin", {
+    fetch("https://arcane-temple-39788.herokuapp.com/addAdmin", {
       method: "POST",
       headers: {
         "content-type": "application/json",

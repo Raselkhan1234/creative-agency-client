@@ -4,7 +4,7 @@ import "./Client.css";
 const Client = () => {
   const [clientReview, setClientReview] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/reviews`, {
+    fetch(`https://arcane-temple-39788.herokuapp.com/reviews`, {
       method: "GET",
       headers: {
         "Content-type": "application/json",

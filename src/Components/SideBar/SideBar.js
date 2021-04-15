@@ -14,7 +14,7 @@ const SideBar = () => {
   const [loggedIn, setLoggedIn] = useContext(UserContext);
   const [isAdmin, setIsAdmin] = useState(false);
   useEffect(() => {
-    fetch("http://localhost:5000/isAdmin", {
+    fetch("https://arcane-temple-39788.herokuapp.com/isAdmin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

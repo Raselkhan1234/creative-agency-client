@@ -21,7 +21,7 @@ const Order = () => {
     formData.append("email", data.email);
     formData.append("name", data.name);
     console.log(formData);
-    fetch("http://localhost:5000/addAllOrders", {
+    fetch("https://arcane-temple-39788.herokuapp.com/addAllOrders", {
       method: "POST",
       body: formData,
     })

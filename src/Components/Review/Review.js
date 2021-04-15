@@ -13,7 +13,7 @@ const Review = () => {
     formData.append("destination", data.destination);
     formData.append("description", data.description);
     console.log(formData);
-    fetch("http://localhost:5000/addReviews", {
+    fetch("https://arcane-temple-39788.herokuapp.com/addReviews", {
       method: "POST",
       body: formData,
     })

@@ -16,7 +16,7 @@ const AddService = () => {
     formData.append("title", data.title);
     formData.append("description", data.description);
     console.log(formData);
-    fetch("http://localhost:5000/addServices", {
+    fetch("https://arcane-temple-39788.herokuapp.com/addServices", {
       method: "POST",
       body: formData,
     })

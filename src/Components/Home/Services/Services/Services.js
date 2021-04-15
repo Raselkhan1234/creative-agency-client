@@ -32,7 +32,7 @@ const Services = () => {
   const [loggedIn, setLoggedIn] = useContext(UserContext);
   const [course, setCourse] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allCourse", {
+    fetch("https://arcane-temple-39788.herokuapp.com/allCourse", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

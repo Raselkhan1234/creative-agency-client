@@ -37,7 +37,7 @@ const ServiceList = () => {
 
   const [serviceInfo, setServiceInfo] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services?email=" + loggedIn.email, {
+    fetch("https://arcane-temple-39788.herokuapp.com/services?email=" + loggedIn.email, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
